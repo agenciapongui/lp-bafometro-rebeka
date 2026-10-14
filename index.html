@@ -74,7 +74,7 @@ svg.i{width:1em;height:1em;flex:none;fill:currentColor}
 /* ---------- Topo ---------- */
 .top{position:absolute;inset:0 0 auto;z-index:5;padding:18px 0}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.top img{width:150px;height:auto}
+.top img{width:140px;height:auto}
 .top__tag{display:none;color:#D5DBE6;font-size:15px}
 .top__tag b{color:#fff;font-weight:600}
 .top__wa{display:none;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:600;font-size:15.5px;padding:10px 18px;border:1px solid rgba(255,255,255,.28);border-radius:999px;transition:background .15s}
@@ -182,7 +182,7 @@ section{scroll-margin-top:20px}
 .lawyer__oab{margin-top:8px;font-weight:600;color:var(--muted);letter-spacing:.4px}
 .lawyer__txt{margin-top:18px;display:grid;gap:12px;color:var(--text)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px;padding:0;list-style:none}
-.tags li{font-size:15px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+.tags li{font-size:15.5px;font-weight:400;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
 
 /* Depoimentos */
 .rating{display:inline-flex;align-items:center;gap:16px;padding:14px 22px;border-radius:16px;background:var(--white);border:1px solid var(--line);margin-top:22px}
@@ -225,7 +225,7 @@ section{scroll-margin-top:20px}
 /* Rodapé */
 .foot{background:#070B15;color:#9AA4B6;font-size:15px;line-height:1.6;padding:52px 0 120px}
 .foot__grid{display:grid;gap:28px}
-.foot img{width:150px}
+.foot img{width:140px}
 .foot .fh{font:700 18px/1 var(--display);letter-spacing:1px;color:#fff;text-transform:uppercase;margin:0 0 12px}
 .foot a{color:#D5DBE6;text-decoration:none}
 .foot a:hover{color:var(--amber)}
@@ -262,7 +262,7 @@ dialog .close{background:var(--ink);color:#fff;border:0;border-radius:999px;padd
 @media (min-width:960px){
   body{font-size:18.5px}
   .top{padding:24px 0}
-  .top img{width:172px}
+  .top img{width:176px}
   .top__tag,.top__wa{display:inline-flex}
   .hero::after{background:linear-gradient(90deg,rgba(10,15,28,.94) 0%,rgba(10,15,28,.78) 45%,rgba(10,15,28,.45) 75%,rgba(10,15,28,.35) 100%),linear-gradient(0deg,rgba(10,15,28,.9) 0%,rgba(10,15,28,0) 35%)}
   .hero__main{grid-template-columns:1.25fr .75fr;align-items:center;padding-top:128px;padding-bottom:84px;gap:56px}
@@ -303,7 +303,7 @@ dialog .close{background:var(--ink);color:#fff;border:0;border-radius:999px;padd
 window.LP = {
   whatsapp: "5584987571254",
   // Rastreamento (os mesmos IDs que já estão nas LPs atuais).
-  gtm: ["GTM-MPK8RBF","GTM-5PWLF7SM","GTM-KNGZ5FC4","GTM-MNJQR4VZ","GTM-NH74WPRP"],
+  gtm: ["GTM-MPK8RBF","GTM-5PWLF7SM","GTM-KNGZ5FC4","GTM-MNJQR4VZ"],
   metaPixel: "1317863396122870",
   // Dispara "Contact" no Pixel a cada clique de WhatsApp.
   // Deixe false se o GTM já envia esse evento, para não contar em dobro.
@@ -319,10 +319,10 @@ document.documentElement.className += " js";
 "employee":{"@type":"Person","name":"Rebeka Paschoal Neves","jobTitle":"Advogada de Direito de Trânsito"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Recusei o bafômetro. E agora?","acceptedAnswer":{"@type":"Answer","text":"A recusa (art. 165-A do CTB) tem as mesmas penalidades do teste positivo: multa de R$ 2.934,70 e suspensão do direito de dirigir por 12 meses. O agente também precisa seguir um procedimento para registrar a recusa, e isso pode ser analisado no seu caso."}},
-{"@type":"Question","name":"Recebi multa no bafômetro. Posso recorrer?","acceptedAnswer":{"@type":"Answer","text":"Sim. Existe a defesa da autuação, o recurso à JARI e, depois, o recurso à segunda instância (Cetran). Cada etapa tem prazo próprio, e o que pode ser alegado depende dos documentos e de como a abordagem foi feita."}},
-{"@type":"Question","name":"Qual é o prazo para recorrer?","acceptedAnswer":{"@type":"Answer","text":"O prazo vem escrito na notificação e, pelo Código de Trânsito, não pode ser menor que 30 dias. Se você já recebeu o documento, envie uma foto pelo WhatsApp para a equipe conferir a data."}},
+{"@type":"Question","name":"Recebi multa no bafômetro. Posso recorrer?","acceptedAnswer":{"@type":"Answer","text":"Sim. Existe a defesa de autuação (defesa prévia), o recurso à JARI e, depois, o recurso à segunda instância (CETRAN). Cada etapa tem prazo próprio e o que pode ser alegado depende dos documentos e de como a abordagem foi feita."}},
+{"@type":"Question","name":"Qual é o prazo para recorrer?","acceptedAnswer":{"@type":"Answer","text":"O prazo vem escrito na notificação e pelo Código de Trânsito não pode ser menor que 30 dias. Se você já recebeu o documento, envie uma foto pelo WhatsApp para a equipe conferir a data."}},
 {"@type":"Question","name":"Vou ficar sem dirigir enquanto o processo corre?","acceptedAnswer":{"@type":"Answer","text":"A suspensão do direito de dirigir é uma penalidade aplicada ao fim do processo administrativo, depois do prazo de defesa. Por isso a defesa dentro do prazo faz diferença."}},
-{"@type":"Question","name":"Preciso ir ao escritório?","acceptedAnswer":{"@type":"Answer","text":"Não. O atendimento é 100% online, para motoristas de qualquer estado. O escritório fica em Natal/RN."}},
+{"@type":"Question","name":"Preciso ir ao escritório?","acceptedAnswer":{"@type":"Answer","text":"Não. O atendimento é 100% online, para motoristas de qualquer estado."}},
 {"@type":"Question","name":"Chamar no WhatsApp me obriga a contratar?","acceptedAnswer":{"@type":"Answer","text":"Não. A primeira conversa é sem compromisso: você explica o que aconteceu, envia o documento e entende as opções. Só segue se quiser."}}
 ]}]}
 </script>
@@ -350,7 +350,7 @@ document.documentElement.className += " js";
 
   <div class="top">
     <div class="wrap">
-      <img src="assets/img/logo-paschoal-neves.webp" alt="Paschoal Neves Advogados" width="344" height="122">
+      <img src="assets/img/logo-paschoal-neves.webp" alt="Paschoal Neves Advogados" width="400" height="160">
       <span class="top__tag"><b>Direito de Trânsito</b>&nbsp;· atendimento online em todo o Brasil</span>
       <a class="top__wa" href="https://api.whatsapp.com/send?phone=5584987571254&amp;text=Ol%C3%A1%2C%20Dra.%20Rebeka!%20Vim%20pelo%20site%20e%20quero%20analisar%20minha%20multa%20da%20Lei%20Seca." data-wa="geral" data-cta="topo" target="_blank" rel="noopener">
         <svg class="i"><use href="#i-wa"/></svg> Falar no WhatsApp
@@ -361,8 +361,8 @@ document.documentElement.className += " js";
   <div class="wrap hero__main">
     <div class="hero__copy">
       <span class="eyebrow">Lei Seca · Bafômetro · CNH</span>
-      <h1>Foi pego no bafômetro? Ainda dá para se defender da multa de <span class="hl nowrap">R$ 2.934,70</span> e da suspensão da CNH.</h1>
-      <p class="hero__lead">Soprou ou se recusou a fazer o teste, existe um processo antes de qualquer penalidade definitiva. A <b>Dra. Rebeka Paschoal Neves</b> analisa o seu auto de infração e os seus prazos e explica o que pode ser contestado no seu caso.</p>
+      <h1>Foi pego no bafômetro? <span class="hl">Ainda dá para se defender.</span></h1>
+      <p class="hero__lead">A multa é de <b>R$ 2.934,70</b> e a CNH pode ser suspensa por 12 meses, mas antes disso existe um processo, com prazos para a sua defesa. A <b>Dra. Rebeka Paschoal Neves</b> analisa o seu caso.</p>
       <div class="hero__cta">
         <a class="btn" href="https://api.whatsapp.com/send?phone=5584987571254&amp;text=Ol%C3%A1%2C%20Dra.%20Rebeka!%20Vim%20pelo%20site%20e%20quero%20analisar%20minha%20multa%20da%20Lei%20Seca." data-wa="geral" data-cta="hero" target="_blank" rel="noopener" id="hero-cta">
           <svg class="i"><use href="#i-wa"/></svg> Quero analisar meu caso
@@ -411,7 +411,7 @@ document.documentElement.className += " js";
       <a class="case reveal" href="https://api.whatsapp.com/send?phone=5584987571254&amp;text=Ol%C3%A1%2C%20Dra.%20Rebeka!%20Vim%20pelo%20site.%20Recebi%20a%20notifica%C3%A7%C3%A3o%20de%20suspens%C3%A3o%20da%20CNH%20por%20Lei%20Seca%20e%20preciso%20de%20orienta%C3%A7%C3%A3o." data-wa="suspensao" data-cta="situacao-suspensao" target="_blank" rel="noopener">
         <span class="case__n">03</span>
         <h3>Chegou a suspensão da CNH</h3>
-        <p>O Detran abriu o processo para suspender o seu direito de dirigir.</p>
+        <p>O órgão autuador (Detran, PRF, DNIT, DER ou prefeitura) abriu o processo para suspender o seu direito de dirigir.</p>
         <span class="case__go">Quero resolver isso <svg class="i"><use href="#i-arrow"/></svg></span>
       </a>
       <a class="case reveal" href="https://api.whatsapp.com/send?phone=5584987571254&amp;text=Ol%C3%A1%2C%20Dra.%20Rebeka!%20Vim%20pelo%20site.%20Tenho%20uma%20multa%20da%20Lei%20Seca%20e%20n%C3%A3o%20sei%20em%20que%20fase%20est%C3%A1%20nem%20se%20ainda%20estou%20no%20prazo." data-wa="prazo" data-cta="situacao-prazo" target="_blank" rel="noopener">
@@ -445,7 +445,7 @@ document.documentElement.className += " js";
       <div class="panel panel--check reveal">
         <h3><svg class="i"><use href="#i-check"/></svg> O que é analisado no seu caso</h3>
         <ul class="list">
-          <li><svg class="i"><use href="#i-check"/></svg><span><b>Os dados do etilômetro:</b> modelo, número de série e se a verificação do Inmetro estava em dia.</span></li>
+          <li><svg class="i"><use href="#i-check"/></svg><span><b>Os dados do etilômetro:</b> modelo, número de série e se a verificação do INMETRO estava em dia.</span></li>
           <li><svg class="i"><use href="#i-check"/></svg><span><b>A margem de erro do aparelho,</b> que precisa ser descontada do valor medido.</span></li>
           <li><svg class="i"><use href="#i-check"/></svg><span><b>O preenchimento do auto de infração,</b> incluindo os campos obrigatórios e as observações do agente.</span></li>
           <li><svg class="i"><use href="#i-check"/></svg><span><b>Os prazos do órgão de trânsito,</b> como o de 30 dias para expedir a notificação.</span></li>
@@ -471,7 +471,7 @@ document.documentElement.className += " js";
   <div class="wrap reveal">
     <p class="myth__q" id="t-myth">Disseram que depois do bafômetro não tem mais o que fazer?</p>
     <p class="myth__a">Não é bem assim.</p>
-    <p class="txt">O auto de infração precisa seguir as regras do Código de Trânsito e das resoluções do Contran. Quando alguma delas não é cumprida, isso pode ser contestado, e a Justiça já reconheceu esse tipo de falha em muitas decisões.</p>
+    <p class="txt">O auto de infração precisa seguir as regras do Código de Trânsito e das resoluções do CONTRAN. Quando alguma delas não é cumprida, isso pode ser contestado. A Justiça, inclusive, já reconheceu esse tipo de falha em muitas decisões.</p>
     <ul>
       <li><svg class="i"><use href="#i-check"/></svg> Nem toda abordagem segue o procedimento correto.</li>
       <li><svg class="i"><use href="#i-check"/></svg> Nem todo teste é válido.</li>
@@ -513,7 +513,7 @@ document.documentElement.className += " js";
       <p class="lawyer__oab">Advogada · OAB/RN 16.550 · Direito de Trânsito</p>
       <div class="lawyer__txt">
         <p>São 12 anos de advocacia e mais de 2.500 motoristas atendidos em casos de trânsito, com foco em Lei Seca, bafômetro e processos de suspensão e cassação da CNH.</p>
-        <p>Cada caso é analisado de forma individual: a leitura do auto de infração, das notificações e dos prazos define a medida administrativa ou judicial cabível. O escritório fica em Natal/RN e atende motoristas de todo o Brasil pelo WhatsApp.</p>
+        <p>Cada caso é analisado de forma individual: a leitura do auto de infração, das notificações e dos prazos define a medida administrativa ou judicial cabível. O escritório atende motoristas de todo o Brasil pelo WhatsApp.</p>
       </div>
       <ul class="tags">
         <li>Lei Seca</li><li>Multa do bafômetro</li><li>Recusa ao teste</li><li>Suspensão da CNH</li><li>Cassação da CNH</li>
@@ -563,10 +563,10 @@ document.documentElement.className += " js";
     </div>
     <div class="faq">
       <details><summary>Recusei o bafômetro. E agora?</summary><div class="a">A recusa (art. 165-A do CTB) tem as <b>mesmas penalidades do teste positivo</b>: multa de R$ 2.934,70 e suspensão do direito de dirigir por 12 meses. O agente também precisa seguir um procedimento para registrar a recusa, e isso pode ser analisado no seu caso.</div></details>
-      <details><summary>Recebi multa no bafômetro. Posso recorrer?</summary><div class="a">Sim. Existe a <b>defesa da autuação</b>, o <b>recurso à JARI</b> e, depois, o recurso à segunda instância (Cetran). Cada etapa tem prazo próprio, e o que pode ser alegado depende dos documentos e de como a abordagem foi feita.</div></details>
-      <details><summary>Qual é o prazo para recorrer?</summary><div class="a">O prazo vem escrito na notificação e, pelo Código de Trânsito, <b>não pode ser menor que 30 dias</b>. Se você já recebeu o documento, envie uma foto pelo WhatsApp para a equipe conferir a data.</div></details>
+      <details><summary>Recebi multa no bafômetro. Posso recorrer?</summary><div class="a">Sim. Existe a <b>defesa de autuação (defesa prévia)</b>, o <b>recurso à JARI</b> e, depois, o recurso à segunda instância (CETRAN). Cada etapa tem prazo próprio e o que pode ser alegado depende dos documentos e de como a abordagem foi feita.</div></details>
+      <details><summary>Qual é o prazo para recorrer?</summary><div class="a">O prazo vem escrito na notificação e pelo Código de Trânsito <b>não pode ser menor que 30 dias</b>. Se você já recebeu o documento, envie uma foto pelo WhatsApp para a equipe conferir a data.</div></details>
       <details><summary>Vou ficar sem dirigir enquanto o processo corre?</summary><div class="a">A suspensão do direito de dirigir é uma penalidade aplicada <b>ao fim do processo administrativo</b>, depois do prazo de defesa. Por isso a defesa dentro do prazo faz diferença.</div></details>
-      <details><summary>Preciso ir ao escritório?</summary><div class="a">Não. O atendimento é <b>100% online</b>, para motoristas de qualquer estado. O escritório fica em Natal/RN.</div></details>
+      <details><summary>Preciso ir ao escritório?</summary><div class="a">Não. O atendimento é <b>100% online</b>, para motoristas de qualquer estado.</div></details>
       <details><summary>Chamar no WhatsApp me obriga a contratar?</summary><div class="a">Não. A primeira conversa é <b>sem compromisso</b>: você explica o que aconteceu, envia o documento e entende as opções. Só segue se quiser.</div></details>
     </div>
   </div>
@@ -595,7 +595,7 @@ document.documentElement.className += " js";
   <div class="wrap">
     <div class="foot__grid">
       <div>
-        <img src="assets/img/logo-paschoal-neves.webp" alt="Paschoal Neves Advogados" width="344" height="122" loading="lazy">
+        <img src="assets/img/logo-paschoal-neves.webp" alt="Paschoal Neves Advogados" width="400" height="160" loading="lazy">
         <p style="margin-top:14px">Direito de Trânsito. Atendimento online para motoristas de todo o Brasil.</p>
       </div>
       <div>
