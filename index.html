@@ -25,7 +25,13 @@
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQH93BS7');</script>
+<!-- End Google Tag Manager -->
 
 <style>
 @font-face{font-family:"Barlow";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/barlow-latin-400-normal.woff2) format("woff2")}
@@ -301,13 +307,8 @@ dialog .close{background:var(--ink);color:#fff;border:0;border-radius:999px;padd
 /* ===================== CONFIGURAÇÃO =====================
    Edite só este bloco para trocar número, mensagens e rastreamento. */
 window.LP = {
-  whatsapp: "5584987571254",
-  // Rastreamento (os mesmos IDs que já estão nas LPs atuais).
-  gtm: ["GTM-MPK8RBF","GTM-5PWLF7SM","GTM-KNGZ5FC4","GTM-MNJQR4VZ"],
-  metaPixel: "1317863396122870",
-  // Dispara "Contact" no Pixel a cada clique de WhatsApp.
-  // Deixe false se o GTM já envia esse evento, para não contar em dobro.
-  pixelContactOnClick: true
+  whatsapp: "5584987571254"
+  // Rastreamento: Google Tag Manager GTM-MQH93BS7 (carregado no <head>).
 };
 document.documentElement.className += " js";
 </script>
@@ -328,6 +329,9 @@ document.documentElement.className += " js";
 </script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQH93BS7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 32 32"><path d="M16.02 3C8.84 3 3 8.83 3 16c0 2.3.6 4.53 1.75 6.5L3 29l6.68-1.74A13 13 0 0 0 16.02 29C23.2 29 29 23.17 29 16S23.2 3 16.02 3Zm0 23.8c-2 0-3.95-.54-5.65-1.55l-.4-.24-3.96 1.03 1.06-3.86-.26-.4A10.77 10.77 0 0 1 5.2 16c0-5.96 4.85-10.8 10.82-10.8 5.96 0 10.8 4.84 10.8 10.8 0 5.97-4.84 10.8-10.8 10.8Zm5.93-8.09c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.17-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.33-.16-1.38-.51-2.62-1.62-.97-.86-1.62-1.93-1.81-2.25-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.1-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.41-.27-.63-.53-.55-.73-.56h-.62c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.15 1.33 3.36c.16.22 2.3 3.5 5.56 4.91.78.34 1.39.54 1.86.69.78.25 1.5.21 2.06.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.13-.3-.21-.62-.37Z"/></symbol>
@@ -630,7 +634,7 @@ document.documentElement.className += " js";
   <h3 id="t-priv">Política de privacidade</h3>
   <p>Esta página não coleta dados por formulário. Ao clicar em um botão de WhatsApp, você inicia uma conversa diretamente com a equipe do escritório Paschoal Neves Advogados.</p>
   <p>As informações e documentos enviados na conversa (como fotos de notificações e da CNH) são usados apenas para analisar o seu caso e prestar o atendimento jurídico, com sigilo profissional, conforme a Lei Geral de Proteção de Dados (Lei 13.709/2018) e o Código de Ética da OAB.</p>
-  <p>Usamos ferramentas de medição de audiência (Google e Meta) para entender o desempenho da página e dos anúncios. Esses dados são estatísticos e não identificam você pelo nome.</p>
+  <p>Usamos ferramentas de medição de audiência do Google para entender o desempenho da página e dos anúncios. Esses dados são estatísticos e não identificam você pelo nome.</p>
   <p>Para pedir acesso, correção ou exclusão dos seus dados, escreva para rebeka.nevesadvocacia@gmail.com.</p>
   <form method="dialog"><button class="close">Fechar</button></form>
 </dialog>
@@ -673,7 +677,6 @@ document.documentElement.className += " js";
     if (!a) return;
     var local = a.getAttribute("data-cta"), assunto = a.getAttribute("data-wa");
     w.dataLayer.push({ event: "clique_whatsapp", cta_local: local, cta_assunto: assunto, origem: origem });
-    if (C.pixelContactOnClick && typeof w.fbq === "function") w.fbq("track", "Contact", { content_name: "bafometro_" + assunto, content_category: local });
   });
 
   /* ---------- WhatsApp fixo aparece depois do botão do topo ---------- */
@@ -699,26 +702,6 @@ document.documentElement.className += " js";
   /* ---------- Política de privacidade ---------- */
   var dlg = d.getElementById("privacy");
   d.getElementById("open-privacy").addEventListener("click", function(){ dlg.showModal ? dlg.showModal() : dlg.setAttribute("open",""); });
-
-  /* ---------- Rastreamento carregado sem travar a página ----------
-     GTM e Pixel entram na primeira interação (rolar, tocar, mover o mouse)
-     ou 3,5 s depois do carregamento, o que vier primeiro. */
-  var loaded = false;
-  function loadTags(){
-    if (loaded) return; loaded = true;
-    w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    (C.gtm || []).forEach(function(id){
-      var s = d.createElement("script"); s.async = true; s.src = "https://www.googletagmanager.com/gtm.js?id=" + id; d.head.appendChild(s);
-    });
-    if (C.metaPixel) {
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(w,d,"script","https://connect.facebook.net/en_US/fbevents.js");
-      w.fbq("init", C.metaPixel); w.fbq("track", "PageView");
-    }
-  }
-  ["scroll","pointerdown","touchstart","keydown","mousemove"].forEach(function(ev){ w.addEventListener(ev, loadTags, { once: true, passive: true }); });
-  w.addEventListener("load", function(){ setTimeout(loadTags, 3500); });
-  // Clique no WhatsApp antes do carregamento: garante que o rastreamento entre.
-  d.addEventListener("click", loadTags, { capture: true, once: true });
 })();
 </script>
 </body>
